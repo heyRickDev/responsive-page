@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  /* colors */
+  --pink-color: #b52184;
+  --blue-color: #312d64;
+  --composite-blue-light: #343193;
+  --composite-blue-dark: #302c63;
+  --white-color-bg: #f9f4fb;
+  /* weights */
+  --semibold-600: 600;
+  --bold-700: 700;
+  --black-900: 900;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+  margin: 0 auto;
+  background-color: var(--white-color-bg);
+}
+header {
+  margin-bottom: 9.3rem;
+}
+.content-wrapper {
+  width: 35.2rem;
+  margin: 0 auto;
+}
+
+header > * {
+  /* all the primary tags inside header */
+  text-align: center;
+}
+#header-title {
+  /* div around the header titles */
+  margin: 1.7rem 0 3.5rem;
+}
+h1 {
+  color: var(--pink-color);
+  font-weight: var(--black-900);
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: var(--semibold-600);
+}
+.firstSection {
+  padding: 5.3rem 0;
+}
+.firstSection,
+footer,
+button {
+  background: linear-gradient(
+    90deg,
+    var(--composite-blue-light),
+    var(--composite-blue-dark)
+  );
+}
+.secondSection {
+  padding: 4.8rem 0 9.5rem;
+}
+.secondSection h1 {
+  font-size: 3rem;
+}
+.cards {
+  background-color: white;
+  padding: 2.6rem 6rem 2.6rem 2.6rem;
+  border-radius: 2rem;
+}
+.cards + .cards {
+  margin-top: 5rem;
+}
+.cards img {
+  width: 8rem;
+  margin-bottom: 3rem;
+}
+.cards p {
+  color: var(--blue-color);
+  font-weight: var(--semibold-600);
+  margin-top: 1.5rem;
+}
+fieldset {
+  border: none;
+}
+fieldset h1 {
+  margin-bottom: 4.3rem;
+  font-weight: var(--black-900);
+}
+.form-wrapper input,
+textarea {
+  all: unset;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  border: 0.15rem solid var(--blue-color);
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+}
+button {
+  width: 15.1rem;
+  border: none;
+  font-size: 1.4rem;
+  color: #fff;
+  border-radius: 1.6rem;
+  padding: 1.1rem 1.6rem;
+}
+footer p {
+  text-align: center;
+  color: var(--white-color-bg);
+  padding: 3.2rem 0;
+}
