@@ -29,7 +29,6 @@ header {
   width: 35.2rem;
   margin: 0 auto;
 }
-
 header > * {
   /* all the primary tags inside header */
   text-align: center;
@@ -47,6 +46,7 @@ h2 {
   font-size: 2rem;
   font-weight: var(--semibold-600);
 }
+/* cards section */
 .firstSection {
   padding: 5.3rem 0;
 }
@@ -58,12 +58,6 @@ button {
     var(--composite-blue-light),
     var(--composite-blue-dark)
   );
-}
-.secondSection {
-  padding: 4.8rem 0 9.5rem;
-}
-.secondSection h1 {
-  font-size: 3rem;
 }
 .cards {
   background-color: white;
@@ -82,6 +76,13 @@ button {
   font-weight: var(--semibold-600);
   margin-top: 1.5rem;
 }
+/* inputs section */
+.secondSection {
+  padding: 4.8rem 0 9.5rem;
+}
+.secondSection h1 {
+  font-size: 3rem;
+}
 fieldset {
   border: none;
 }
@@ -89,9 +90,13 @@ fieldset h1 {
   margin-bottom: 4.3rem;
   font-weight: var(--black-900);
 }
-.form-wrapper input,
+input,
 textarea {
   all: unset;
+  width: 100%;
+}
+textarea {
+  height: 9.4rem;
 }
 .form-wrapper {
   display: flex;
@@ -108,6 +113,7 @@ textarea {
 }
 button {
   width: 15.1rem;
+  height: 4.5rem;
   border: none;
   font-size: 1.4rem;
   color: #fff;
@@ -116,6 +122,8 @@ button {
 }
 footer p {
   text-align: center;
+  font-size: 2rem;
+  font-weight: var(--semibold-600);
   color: var(--white-color-bg);
   padding: 3.2rem 0;
 }
