@@ -26,16 +26,22 @@ header {
   margin-bottom: 9.3rem;
 }
 .content-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 35.2rem;
   margin: 0 auto;
 }
-header > * {
-  /* all the primary tags inside header */
-  text-align: center;
+#header-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #header-title {
   /* div around the header titles */
   margin: 1.7rem 0 3.5rem;
+}
+#arrow {
+  width: fit-content;
 }
 h1 {
   color: var(--pink-color);
@@ -64,8 +70,8 @@ button {
   padding: 2.6rem 6rem 2.6rem 2.6rem;
   border-radius: 2rem;
 }
-.cards + .cards {
-  margin-top: 5rem;
+.firstSection .content-wrapper {
+  gap: 5rem;
 }
 .cards img {
   width: 8rem;
@@ -126,4 +132,19 @@ footer p {
   font-weight: var(--semibold-600);
   color: var(--white-color-bg);
   padding: 3.2rem 0;
+}
+
+@media (min-width: 1024px) {
+  .firstSection .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    width: 121.8rem;
+    margin: 6.4rem auto;
+  }
+  .cards {
+    margin: 0 auto;
+  }
 }
