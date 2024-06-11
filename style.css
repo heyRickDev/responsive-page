@@ -22,26 +22,30 @@ body {
   margin: 0 auto;
   background-color: var(--white-color-bg);
 }
-header {
-  margin-bottom: 9.3rem;
-}
 .content-wrapper {
   display: flex;
   flex-direction: column;
   width: 35.2rem;
   margin: 0 auto;
 }
+#hero {
+  width: 100%;
+  height: 100%;
+}
 #header-items {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 #header-title {
   /* div around the header titles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 1.7rem 0 3.5rem;
 }
 #arrow {
   width: fit-content;
+  margin: 3.5rem 0 9.3rem;
 }
 h1 {
   color: var(--pink-color);
@@ -135,6 +139,14 @@ footer p {
 }
 
 @media (min-width: 1024px) {
+  /* .content-wrapper {
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    width: 121.8rem;
+  } */
+  header .content-wrapper,
   .firstSection .content-wrapper {
     display: flex;
     flex-direction: row;
@@ -144,7 +156,46 @@ footer p {
     width: 121.8rem;
     margin: 6.4rem auto;
   }
+  header .content-wrapper {
+    flex-direction: row-reverse;
+    margin: 0 auto 6.4rem;
+  }
+  #hero {
+    width: 70rem;
+    /* margin: 0 2.8rem; */
+    /* height: 100vh; */
+  }
+  #header-items {
+    flex-direction: row-reverse;
+    gap: 2.8rem;
+  }
+  #header-title {
+    align-items: flex-start;
+    margin: 0;
+  }
+  header h1 {
+    font-size: 5.8rem;
+    margin-top: 31.2rem;
+  }
+  header h2 {
+    font-size: 3.2rem;
+  }
+  #arrow {
+    margin-top: 18rem;
+    margin-bottom: 0;
+  }
   .cards {
     margin: 0 auto;
+  }
+  .secondSection {
+    background-image: url(assets/starred-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .secondSection .content-wrapper {
+    margin-left: 6rem;
+  }
+  .form-items {
+    width: 60rem;
   }
 }
